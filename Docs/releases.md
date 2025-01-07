@@ -1,7 +1,37 @@
 # Releases
 
-## New in 5.10
-*  Support Action Filtering in Redux Dev Tools ([#383](https://github.com/mrpmorris/Fluxor/issues/383))
+## New in 6.5.2
+ * False positive FLXW01 error fixed ([#522](https://github.com/mrpmorris/Fluxor/issues/522))
+
+## New in 6.5
+ * Support subscribing to fields instead of properties ([#514](https://github.com/mrpmorris/Fluxor/issues/514))
+
+## New in 6.4
+ * Optimise Roslyn analyzer
+ * Use Microsoft.CodeAnalysis.CSharp instead of Microsoft.CodeAnalysis.CSharp.Workspaces
+
+## New in 6.3
+ * Downgrade Microsoft.CodeAnalysis.CSharp.Workspaces to 4.9.2 (.NET 8 version). ([#519](https://github.com/mrpmorris/Fluxor/issues/519))
+
+## New in 6.2.1
+ * Analyzer to ensure base.OnInitialized or base.OnInitializedAsync is called in Blazor apps.
+
+## New in 6.2
+ * Support only .NET 8 and 9.
+
+## New in 6.1
+* Allow relative URLs in routing middleware ([#497](https://github.com/mrpmorris/Fluxor/issues/497))
+* Support JsonOptions and double.Nan serialization in Redux Dev Tools ([#503](https://github.com/mrpmorris/Fluxor/issues/503))
+
+## New in 6.0
+* **Breaking change**: Remove support for obsolete versions of .NET framework ([#384](https://github.com/mrpmorris/Fluxor/issues/384))
+* **Breaking change**: Replace IDisposable with IAsyncDisposable in Blazor components ([#324](https://github.com/mrpmorris/Fluxor/issues/324))
+* **Breaking change**: `UseReduxDevTools` no longer ensures `UseRouting` is called ([#360](https://github.com/mrpmorris/Fluxor/issues/360))
+* **Breaking change**: `UseReduxDevTools` no longer requires `Newtonsoft.Json` ([#386](https://github.com/mrpmorris/Fluxor/issues/386))
+* Support Action Filtering in Redux Dev Tools ([#383](https://github.com/mrpmorris/Fluxor/issues/383))
+* Do not consider anchor (Uri.Fragment) when checking Uri for changes in routing middleware ([#455](https://github.com/mrpmorris/Fluxor/issues/455))
+* Resolve bug where StoreInitializer could cause DisposableCallback to throw an exception ([#491](https://github.com/mrpmorris/Fluxor/issues/491))
+
 ## New in 5.9
 * Adds additional useful information to exception thrown by `DisposableAction` ([#425](https://github.com/mrpmorris/Fluxor/issues/425))
 * Fix deadlock scenario when dispatching actions from an effect triggered by store activation ([#426](https://github.com/mrpmorris/Fluxor/issues/426))
